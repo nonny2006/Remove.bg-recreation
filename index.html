@@ -5,29 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remove Background</title>
     <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 </head>
 <body>
-    <div class="header">
-        <div class="container"></div>
+    <header>
+        <div class="logo">
+            <img src="images/download (4).svg" alt="logo">
+        </div>
         <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                <img src="./capture.PNG" alt="logo">
-                </div>
                 <div class="nav-items">
                     <ul>
                         <li><a href="#">Remove Background</a></li>
-                        <li><a href="#">How To Use</a></li>
-                        <li><a href="#">Tools and Api</a></li>
+                        <div>
+                            <a href="#">How To Use <i class="bi bi-chevron-down"></i></a>
+                            <!-- The div below is for the dropdown content -->
+                             <div></div>
+                        </div>
+                        <li><a href="#">Tools and API</a></li>
                         <li><a href="#">Pricing</a></li>
                     </ul>
                 <div class="nav-items2">
-                    <li><a href="#" class="nav-link">Log In</a></li>
-                    <li><a href="#" class="sign-up">Sign Up</a></li>
-                </div>    
-                </div>
-            </div>
+                    <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>  
         </nav>
-    </div>    
+    </header>    
 </body>
 </html>

@@ -47,6 +47,11 @@ body {
   font-size: 18px;
 }
 
+div > a {
+  text-decoration: none;
+  color: #454545;
+}
+
 .nav-items2 {
   display: flex;
 }
@@ -68,7 +73,7 @@ body {
   text-decoration: none;
 }
 
-.right-nav > ul > li:last-child > a {
+.nav-items2 > ul > li:last-child > a {
   padding-inline: 28px;
   padding-block: 12px;
   border-radius: 999px;
