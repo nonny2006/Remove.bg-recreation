@@ -1,38 +1,80 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #fff;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #454545;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /* position: fixed; */
-    overflow: hidden;
-    background-color: #333;
-  }
-  
- .navbar ul li {
-    float: left;
-  }
-  
-.navbar ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-/* Change the link color to #111 (black) on hover */
-.navbar ul li a:hover {
-    background-color: #111;
-  } 
+.page-header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.848);
+  backdrop-filter: blur(9px);
+  padding-inline: 32px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items {
+  margin-left: 32px;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+.nav-items > ul > li > a {
+  text-decoration: none;
+  color: #454545;
+  font-size: 18px;
+}
+
+.nav-items2 {
+  display: flex;
+}
+
+.nav-items2 > ul {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-items2 > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items2 > ul > li:first-child > a {
+  color: #454545;
+  text-decoration: none;
+}
+
+.right-nav > ul > li:last-child > a {
+  padding-inline: 28px;
+  padding-block: 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #454545;
+  background-color: rgba(177, 177, 177, 0.125);
+  font-weight: bold;
+}
+
